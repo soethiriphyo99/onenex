@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --bg-primary: #f8f7f2;
+  --accent-purple: #7c3aed;
+  --accent-purple-light: #9061f9;
+  --text-main: #1a1a1a;
+  --text-muted: #666666;
+  --border-color: rgba(0, 0, 0, 0.1);
+  --glass-bg: rgba(248, 247, 242, 0.8);
+  --header-height: 80px;
+
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light;
+  color: var(--text-main);
+  background-color: var(--bg-primary);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: var(--bg-primary);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+/* Custom Utilities */
+.text-outline {
+  -webkit-text-stroke: 1px var(--accent-purple);
+  color: transparent;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, var(--accent-purple), var(--accent-purple-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
